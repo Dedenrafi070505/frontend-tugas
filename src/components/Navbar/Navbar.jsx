@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const NavContainer = styled.header`
-  background: linear-gradient(to right, #1e1e2f, #2c2c3e);
+  background: linear-gradient(to right, #ff0000, #000000); /* merah ke hitam */
   padding: 1.5rem 2rem;
   color: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -25,7 +25,7 @@ const StyledNavbar = styled.nav`
 const NavBrand = styled.h1`
   font-size: 2rem;
   font-weight: 700;
-  color:rgb(54, 52, 192); /* amber-400 */
+  color: rgb(255, 204, 204); /* ganti ke warna merah muda biar cocok */
   margin-bottom: 1rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
@@ -61,8 +61,8 @@ const NavItem = styled.li`
     transition: all 0.3s ease;
 
     &:hover {
-      color:rgb(147, 151, 212); /* amber hover */
-      border-bottom: 2px solidrgb(204, 197, 179);
+      color: #ff9999; /* hover merah muda */
+      border-bottom: 2px solid #ff9999; /* perbaiki: tambahkan spasi setelah solid */
     }
   }
 `;
@@ -71,7 +71,7 @@ function Navbar() {
   return (
     <NavContainer>
       <StyledNavbar>
-        <NavBrand>🎬 Movie App</NavBrand>
+        <NavBrand>Movie App</NavBrand>
         <NavList>
           <NavItem>
             <Link to="/">Home</Link>

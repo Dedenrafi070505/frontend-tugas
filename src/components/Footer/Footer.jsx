@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const FooterContainer = styled.footer`
-  background: linear-gradient(to right, #1e1e2f, #2c2c3e);
+  background: linear-gradient(to right, #ff0000, #000000); /* merah ke hitam */
   color: #f1f1f1;
   padding: 2rem;
   text-align: center;
@@ -15,7 +15,7 @@ const FooterTitle = styled.h2`
   font-weight: 600;
   margin-bottom: 0.5rem;
   letter-spacing: 1px;
-  color: #fbbf24; /* amber-400 */
+  color: #ffcccc; /* ubah amber ke merah muda agar cocok */
 `;
 
 const FooterAuthor = styled.p`
@@ -27,8 +27,8 @@ const FooterAuthor = styled.p`
 function Footer() {
   return (
     <FooterContainer>
-      <FooterTitle>🎬 Movie App</FooterTitle>
-      <FooterAuthor>Created by Lutfi Fuat Azhar</FooterAuthor>
+      <FooterTitle>Movie App</FooterTitle>
+      <FooterAuthor>Created by Deden rafi akbar</FooterAuthor>
     </FooterContainer>
   );
 }
